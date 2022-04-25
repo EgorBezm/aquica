@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Tag extends Model
 {
     use HasFactory;
+
+    public function emoji()
+    {
+        return $this->belongsTo(Emoji::class);
+    }
 }
