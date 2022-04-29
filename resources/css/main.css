@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #F1F6F8;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+
+    background: #323232;
+    backdrop-filter: blur(64px);
+}
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    margin: 0 28px;
+}
+.content{
+    margin: 84px 0 0 0;
+}
+.sidebar{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 474px;
+    border: 1px solid #E1E3E6;
+}
+.content__main{
+    margin: 0 0 0 474px;
+    padding: 0 24px;
+}
