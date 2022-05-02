@@ -1,10 +1,10 @@
-@extends('layouts.master')
+@extends('login.layouts.login-master')
 
 @section('content')
-{{--  здесь кнопки  --}}
-@stop
+    <link rel="stylesheet" href="{{ asset('css/forgot.css') }}">
 
-@section('content')
+    <div class="wrapper">
 
+    </div>
 
 @stop
