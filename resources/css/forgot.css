@@ -1,0 +1,42 @@
+.forgot{
+    padding: 0 340px;
+}
+.forgot__name{
+    font-size: 18px;
+    color: #5A6474;
+}
+.forgot__main-text{
+    margin: 65px 0 0 0;
+}
+.forgot__description{
+    margin: 24px 0 0 0;
+}
+.forgot form{
+    margin: 24px 0 0 0;
+}
+.forgot form input{
+    height: 48px;
+    width: 320px;
+    padding: 12px 16px;
+    border: 1px solid #E1E3E6;
+    border-radius: 8px;
+}
+.forgot form button{
+    margin: 46px 0 0 0;
+}
+
+@media (max-width: 1000px) {
+    .forgot{
+        padding: 0 170px;
+    }
+}
+@media (max-width: 600px) {
+    .forgot{
+        padding: 0 100px;
+    }
+}
+@media (max-width: 500px) {
+    .forgot{
+        padding: 0 50px;
+    }
+}
