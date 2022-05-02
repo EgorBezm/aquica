@@ -37,11 +37,11 @@
             </button>   
         </div>
     </div>
-    <div class="sidebar-content">
-        <div class="sidebar-content_title">
+    <div class="sidebar-content_title">
             <h5>FRIENDS</h5>
             <img src="{{ asset('images/icons/icon-arrow-up.svg')}}" alt="nav-menu">
         </div>
+    <div class="sidebar-content">
         <div class="sidebar-content__block">
             <div class="content-block_elem1">
                 <div class="user-content_left">
@@ -162,11 +162,11 @@
                 </div>
             </div>
         </div>
-        <button class="sidebar-addfriends_button">
+    </div>
+    <button class="sidebar-addfriends_button">
             <img src="{{ asset('images/icons/icon-addfriends.svg')}}" alt="icon-addfriends">
             <h4>Add Friends</h4>
         </button>
-    </div>
     <div class="sidebar-signout">
             <div class="sidebar-signout_button">
                 <img src="{{ asset('images/icons/icon-log-out.svg')}}" alt="nav-log-out">
