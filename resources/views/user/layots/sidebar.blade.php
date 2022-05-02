@@ -44,16 +44,18 @@
         </div>
         <div class="sidebar-content__block">
             <div class="content-block_elem1">
-                <div class="user-avatar">
-                    <img src="{{ asset('images/avatars/avatar2.svg')}}" alt="user">
-                </div>
                 <div class="user-content_left">
-                    <h4>Robert Plant</h4>
-                    <div class="user1-post_images">
-                        <img src="{{ asset('images/sidebar posts/Image1.svg')}}" alt="user1-img1">
-                        <img src="{{ asset('images/sidebar posts/Image2.svg')}}" alt="user1-img2">
-                        <img src="{{ asset('images/sidebar posts/Image3.svg')}}" alt="user1-img3">
-                        <p>+6 more</p>
+                    <div class="user-avatar">
+                        <img src="{{ asset('images/avatars/avatar2.svg')}}" alt="user">
+                    </div>
+                    <div class="user-name">
+                        <h4>Robert Plant</h4>
+                        <div class="user1-post_images">
+                            <img src="{{ asset('images/sidebar posts/Image1.svg')}}" alt="user1-img1">
+                            <img src="{{ asset('images/sidebar posts/Image2.svg')}}" alt="user1-img2">
+                            <img src="{{ asset('images/sidebar posts/Image3.svg')}}" alt="user1-img3">
+                            <p>+6 more</p>
+                        </div>
                     </div>
                 </div>
                 <div class="user-content_right">
@@ -66,16 +68,18 @@
         </div>
         <div class="sidebar-content__block">
             <div class="content-block_elem1">
-                <div class="user-avatar">
-                    <img src="{{ asset('images/avatars/avatar3.svg')}}" alt="user">
-                </div>
                 <div class="user-content_left">
-                    <h4>Bon Scott</h4>
-                    <div class="user1-post_images">
-                        <img src="{{ asset('images/sidebar posts/Image1.svg')}}" alt="user1-img1">
-                        <img src="{{ asset('images/sidebar posts/Image2.svg')}}" alt="user1-img2">
-                        <img src="{{ asset('images/sidebar posts/Image3.svg')}}" alt="user1-img3">
-                        <p>+6 more</p>
+                    <div class="user-avatar">
+                        <img src="{{ asset('images/avatars/avatar3.svg')}}" alt="user">
+                    </div>
+                    <div class="user-name">
+                        <h4>Bon Scott</h4>
+                        <div class="user1-post_images">
+                            <img src="{{ asset('images/sidebar posts/Image1.svg')}}" alt="user1-img1">
+                            <img src="{{ asset('images/sidebar posts/Image2.svg')}}" alt="user1-img2">
+                            <img src="{{ asset('images/sidebar posts/Image3.svg')}}" alt="user1-img3">
+                            <p>+6 more</p>
+                        </div>
                     </div>
                 </div>
                 <div class="user-content_right">
@@ -88,16 +92,18 @@
         </div>
         <div class="sidebar-content__block">
             <div class="content-block_elem1">
-                <div class="user-avatar">
-                    <img src="{{ asset('images/avatars/avatar4.svg')}}" alt="user">
-                </div>
                 <div class="user-content_left">
-                    <h4>Angus Young</h4>
-                    <div class="user1-post_images">
-                        <img src="{{ asset('images/sidebar posts/Image1.svg')}}" alt="user1-img1">
-                        <img src="{{ asset('images/sidebar posts/Image2.svg')}}" alt="user1-img2">
-                        <img src="{{ asset('images/sidebar posts/Image3.svg')}}" alt="user1-img3">
-                        <p>+6 more</p>
+                    <div class="user-avatar">
+                        <img src="{{ asset('images/avatars/avatar4.svg')}}" alt="user">
+                    </div>
+                    <div class="user-name">
+                        <h4>Angus Young</h4>
+                        <div class="user1-post_images">
+                            <img src="{{ asset('images/sidebar posts/Image1.svg')}}" alt="user1-img1">
+                            <img src="{{ asset('images/sidebar posts/Image2.svg')}}" alt="user1-img2">
+                            <img src="{{ asset('images/sidebar posts/Image3.svg')}}" alt="user1-img3">
+                            <p>+6 more</p>
+                        </div>
                     </div>
                 </div>
                 <div class="user-content_right">
@@ -109,17 +115,19 @@
             </div>
         </div>
         <div class="sidebar-content__block">
-            <div class="content-block_elem1">
-                <div class="user-avatar">
-                    <img src="{{ asset('images/avatars/avatar5.svg')}}" alt="user">
-                </div>
+        <div class="content-block_elem1">
                 <div class="user-content_left">
-                    <h4>Fiona Gallagher</h4>
-                    <div class="user1-post_images">
-                        <img src="{{ asset('images/sidebar posts/Image1.svg')}}" alt="user1-img1">
-                        <img src="{{ asset('images/sidebar posts/Image2.svg')}}" alt="user1-img2">
-                        <img src="{{ asset('images/sidebar posts/Image3.svg')}}" alt="user1-img3">
-                        <p>+6 more</p>
+                    <div class="user-avatar">
+                        <img src="{{ asset('images/avatars/avatar5.svg')}}" alt="user">
+                    </div>
+                    <div class="user-name">
+                        <h4>Fiona Gallagher</h4>
+                        <div class="user1-post_images">
+                            <img src="{{ asset('images/sidebar posts/Image1.svg')}}" alt="user1-img1">
+                            <img src="{{ asset('images/sidebar posts/Image2.svg')}}" alt="user1-img2">
+                            <img src="{{ asset('images/sidebar posts/Image3.svg')}}" alt="user1-img3">
+                            <p>+6 more</p>
+                        </div>
                     </div>
                 </div>
                 <div class="user-content_right">
@@ -131,17 +139,19 @@
             </div>
         </div>
         <div class="sidebar-content__block">
-            <div class="content-block_elem1">
-                <div class="user-avatar">
-                    <img src="{{ asset('images/avatars/avatar6.svg')}}" alt="user">
-                </div>
+        <div class="content-block_elem1">
                 <div class="user-content_left">
-                    <h4>Ozzy Osbourne</h4>
-                    <div class="user1-post_images">
-                        <img src="{{ asset('images/sidebar posts/Image1.svg')}}" alt="user1-img1">
-                        <img src="{{ asset('images/sidebar posts/Image2.svg')}}" alt="user1-img2">
-                        <img src="{{ asset('images/sidebar posts/Image3.svg')}}" alt="user1-img3">
-                        <p>+6 more</p>
+                    <div class="user-avatar">
+                        <img src="{{ asset('images/avatars/avatar6.svg')}}" alt="user">
+                    </div>
+                    <div class="user-name">
+                        <h4>Ozzy osbourne</h4>
+                        <div class="user1-post_images">
+                            <img src="{{ asset('images/sidebar posts/Image1.svg')}}" alt="user1-img1">
+                            <img src="{{ asset('images/sidebar posts/Image2.svg')}}" alt="user1-img2">
+                            <img src="{{ asset('images/sidebar posts/Image3.svg')}}" alt="user1-img3">
+                            <p>+6 more</p>
+                        </div>
                     </div>
                 </div>
                 <div class="user-content_right">

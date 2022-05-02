@@ -57,13 +57,13 @@
 }
 
 .sidebar-signout {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
+    position: absolute;
+    bottom: 24px;
+    width: 100%;
 }
 
 .sidebar-signout_button {
-    display: flex;
+    display: flex;  
     padding: 12px 16px;
     color: #757d8a;
 }
@@ -136,9 +136,6 @@
     padding-left: 16px;
 }
 
-.sidebar-content {
-}
-
 .sidebar-content_title {
     display: flex;
     justify-content: space-between;
@@ -158,17 +155,14 @@
 .sidebar-content__block {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 16px;
-    min-width: 394px;
 }
 
 .content-block_elem1 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
-    width: 100%;
+    justify-content: space-between;
 }
 
 .user-avatar {
@@ -178,10 +172,14 @@
 
 .user-content_left {
     display: flex;
+    flex-direction: row;
+}
+
+.user-name {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    margin: 0px 16px;
+    padding-left: 16px;
 }
 
 .user1-post_images {
