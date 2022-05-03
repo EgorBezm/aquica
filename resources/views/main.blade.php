@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../resources/css/main-page.css">
+<link rel="stylesheet" href="../resources/css/main.css">
 @extends('layouts.master')
 
 @section('header')
