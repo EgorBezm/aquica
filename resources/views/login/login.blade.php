@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 
     <div class="login">
-        <form action="" method="">
+        <form action="{{ route('login-page') }}" method="post">
             <div class="login__logo">
                 <img src="{{ asset('images/logos/logo-bg-blue.png') }}" alt="logo">
             </div>
@@ -17,7 +17,7 @@
             </div>
 
             <div class="for-input for-input_email">
-                <input type="email" name="email" placeholder="Email">
+                <input type="email" name="email" placeholder="Email" required>
                 <button>
                     <img src="{{ asset('images/icons/icon-send.png') }}" alt="send">
                 </button>

@@ -27,7 +27,8 @@
                 @endfor
             </div>
             <div class="signup-form">
-                <form action="" method="" class="form">
+                <form action="{{ route('register') }}" method="post" class="form">
+                    @csrf
                     <div class="form__wrapper">
                         <div class="form__logo">
                             <img src="{{ asset('images/logos/logo-name.png') }}" alt="logo">
@@ -36,9 +37,9 @@
                             Sign up to find your inspiration
                         </div>
                         <div class="inputs">
-                            <input type="email" name="email" placeholder="Email">
-                            <input type="password" name="password" placeholder="Password">
-                            <input type="number" name="age" placeholder="Age">
+                            <input type="email" name="email" placeholder="Email" maxlength="255" required>
+                            <input type="password" name="password" placeholder="Password" minlength="8" maxlength="255" required>
+                            <input type="number" name="age" placeholder="Age" required maxlength="8">
                             <button class="btn btn_green">Sign up</button>
                         </div>
                         <div class="login">
@@ -55,6 +56,15 @@
             </div>
         </div>
     </div>
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 
     <script src="{{ asset('js/signup/slider.js') }}"></script>
 @stop

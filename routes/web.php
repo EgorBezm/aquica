@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,13 +16,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('fordevelopment');
-});
 
-Route::get('welcome', function () {
-    return view('welcome');
-});
+
+Route::get('/', [MainController::class, 'main'])->middleware('auth')->name('home');
+
+Route::get('welcome', [MainController::class, 'welcome'])->name('login');
+
+Route::get('signup', [MainController::class, 'signup'])->name('register');
+Route::post('signup', [RegisterController::class, 'register'])->name('register');
+
+Route::get('login', [MainController::class, 'login'])->name('login-page');
+Route::post('login', [LoginController::class, 'login'])->name('login-page');
+
 
 Route::get('main', function () {
     return view('main');
