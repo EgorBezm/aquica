@@ -102,6 +102,10 @@ h1{
     background: #0071E3;
     color: #FFFFFF;
 }
+.btn_green{
+    background: #07A287;
+    color: #FFFFFF;
+}
 .btn_header{
     padding: 8px 21px;
     margin: 0 0 0 24px;
@@ -112,4 +116,5 @@ textarea{
     font-weight: 500;
     font-size: 18px;
     color: #757D8A;
+    padding: 12px 16px;
 }
