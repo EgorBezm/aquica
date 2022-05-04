@@ -19,8 +19,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
 Route::get('/', [MainController::class, 'main'])->middleware('auth')->name('home');
 
 Route::get('welcome', [MainController::class, 'welcome'])->name('login');
@@ -28,61 +26,78 @@ Route::get('welcome', [MainController::class, 'welcome'])->name('login');
 Route::get('signup', [MainController::class, 'signup'])->name('signup');
 Route::post('signup', [RegisterController::class, 'register'])->name('register');
 
-Route::get('login', [MainController::class, 'login'])->name('login-page');
-Route::post('login', [LoginController::class, 'login'])->name('login-page');
-
-Route::get('login/forgot', [MainController::class, 'forgot'])->name('forgot');
-Route::post('login/forgot', [ForgotPasswordController::class, 'index'])->name('forgot');
-
-Route::get('login/reset-password', [ResetPasswordController::class, 'index'])->name('reset');
-Route::post('login/reset-password', [ResetPasswordController::class, 'reset'])->name('reset');
-
-Route::post('login/user-tag', [UserTagController::class, 'store'])->name('user-tag');
-
-
-Route::get('main', function () {
-    return view('main');
-});
-
-Route::prefix('user')->group(function () {
-    Route::get('/', function () {
-        return view('user/user');
-    });
-
-    Route::get('/user', function () {
-        return view('user/user');
-    });
-
-    Route::get('/admin', function () {
-        return view('user/admin');
-    });
-
-    Route::get('/storage', function () {
-        return view('user/storage');
-    });
-});
-
 Route::prefix('login')->group(function () {
+
+    Route::get('/', [MainController::class, 'login'])->name('login-page');
+    Route::post('/', [LoginController::class, 'login'])->name('login-page');
+
+    Route::get('forgot', [MainController::class, 'forgot'])->name('forgot');
+    Route::post('forgot', [ForgotPasswordController::class, 'index'])->name('forgot');
+
+    Route::get('reset-password', [ResetPasswordController::class, 'index'])->name('reset');
+    Route::post('reset-password', [ResetPasswordController::class, 'reset'])->name('reset');
+
+    Route::post('user-tag', [UserTagController::class, 'store'])->name('user-tag');
+
+});
+
+
+Route::prefix('test')->group(function () {
     Route::get('/', function () {
-        return view('login/login');
+        return view('fordevelopment');
     });
 
-    Route::get('/login', function () {
-        return view('login/login');
+    Route::get('main', function () {
+        return view('main');
     });
 
-    Route::get('/forgot', function () {
-        return view('login/forgot');
+    Route::get('welcome', function () {
+        return view('welcome');
     });
 
-    Route::get('/settings', function () {
-        return view('login/settings', [
-            'tags' => \App\Models\Tag::all(),
-        ]);
+    Route::prefix('user')->group(function () {
+        Route::get('/', function () {
+            return view('user/user');
+        });
+
+        Route::get('/user', function () {
+            return view('user/user');
+        });
+
+        Route::get('/admin', function () {
+            return view('user/admin');
+        });
+
+        Route::get('/storage', function () {
+            return view('user/storage');
+        });
     });
 
-    Route::get('/signup', function () {
-        return view('login/signup');
-    });
+    Route::prefix('login')->group(function () {
+        Route::get('/', function () {
+            return view('login/login');
+        });
 
+        Route::get('/login', function () {
+            return view('login/login');
+        });
+
+        Route::get('/forgot', function () {
+            return view('login/forgot');
+        });
+
+        Route::get('/settings', function () {
+            return view('login/settings', [
+                'tags' => \App\Models\Tag::all(),
+            ]);
+        });
+
+        Route::get('/signup', function () {
+            return view('login/signup');
+        });
+
+        Route::get('/reset-password', function () {
+            return view('login/reset-password', ['token' => '123']);
+        });
+    });
 });
