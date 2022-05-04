@@ -90,15 +90,16 @@ body {
 .columns {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 24px;
     margin-left: 24px;
     gap: 24px;
+    max-height: 900px;
 }
 
 .column1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 20px;
     width: 450px;
     top: 0px;
@@ -108,15 +109,27 @@ body {
     border-radius: 8px;
     gap: 20px;
     margin-bottom: 24;
+    height: 876px;
+    justify-content: center;
+    align-items: center;
 }
 
 .post-img {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
 
+    height: 100%;
 }
 
 .post-img img {
+    max-width: fit-content;
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
-    width: 410px;
 }
 
 .admin-card_user {
