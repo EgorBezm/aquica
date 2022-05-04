@@ -2,12 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class MainController extends Controller
 {
     public function main()
     {
+        $user = Auth::user();
+
+        if (empty($user->tags->all())) {
+            return view('login/settings', [
+                'tags' => Tag::all(),
+            ]);
+        }
+
         return view('main');
     }
 

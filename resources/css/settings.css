@@ -23,7 +23,7 @@ body{
     max-height: 340px;
 }
 .settings-page__select{
-    margin: 55px 0 0 0;
+    margin: 25px 0 0 0;
 }
 .select__description{
     margin: 20px 0 0 0;
@@ -51,6 +51,7 @@ body{
 .select__item{
     display: flex;
     margin: 12px 0;
+    width: 33%;
 }
 .select__item label{
     display: flex;
@@ -90,6 +91,10 @@ body{
 }
 .btn_settings img{
     margin: 0 0 0 6px;
+}
+.select__tags{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 1000px) {

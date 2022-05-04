@@ -4,6 +4,7 @@ use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ResetPasswordController;
+use App\Http\Controllers\Auth\UserTagController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
@@ -35,6 +36,8 @@ Route::post('login/forgot', [ForgotPasswordController::class, 'index'])->name('f
 
 Route::get('login/reset-password', [ResetPasswordController::class, 'index'])->name('reset');
 Route::post('login/reset-password', [ResetPasswordController::class, 'reset'])->name('reset');
+
+Route::post('login/user-tag', [UserTagController::class, 'store'])->name('user-tag');
 
 
 Route::get('main', function () {
@@ -73,7 +76,9 @@ Route::prefix('login')->group(function () {
     });
 
     Route::get('/settings', function () {
-        return view('login/settings');
+        return view('login/settings', [
+            'tags' => \App\Models\Tag::all(),
+        ]);
     });
 
     Route::get('/signup', function () {
