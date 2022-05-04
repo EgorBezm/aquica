@@ -118,3 +118,14 @@ textarea{
     color: #757D8A;
     padding: 12px 16px;
 }
+.alert{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.alert_success{
+    color: #07A287;
+}
+.alert_error{
+    color: #F43C3C;
+}

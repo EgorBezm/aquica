@@ -22,7 +22,32 @@
     border-radius: 8px;
 }
 .forgot form button{
-    margin: 46px 0 0 0;
+    margin: 25px 0 0 0;
+}
+.error{
+    display: flex;
+    align-items: center;
+    width: 424px;
+    margin: 8px 0 0 0;
+}
+.error_no{
+    visibility: hidden;
+}
+.error__icon{
+    margin: 0 5px 0 0 ;
+}
+.error__message{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F43C3C;
+}
+
+.reset form input{
+    margin: 12px 0;
+}
+.reset  form button{
+    margin: 36px 0 0 0;
 }
 
 @media (max-width: 1000px) {
