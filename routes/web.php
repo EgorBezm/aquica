@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\MainController;
@@ -22,11 +23,14 @@ Route::get('/', [MainController::class, 'main'])->middleware('auth')->name('home
 
 Route::get('welcome', [MainController::class, 'welcome'])->name('login');
 
-Route::get('signup', [MainController::class, 'signup'])->name('register');
+Route::get('signup', [MainController::class, 'signup'])->name('signup');
 Route::post('signup', [RegisterController::class, 'register'])->name('register');
 
 Route::get('login', [MainController::class, 'login'])->name('login-page');
 Route::post('login', [LoginController::class, 'login'])->name('login-page');
+
+Route::get('login/forgot', [MainController::class, 'forgot'])->name('forgot');
+Route::post('login/forgot', [ForgotPasswordController::class, 'index'])->name('forgot');
 
 
 Route::get('main', function () {

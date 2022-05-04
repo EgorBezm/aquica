@@ -25,4 +25,9 @@ class MainController extends Controller
     {
         return view('login.login');
     }
+
+    public function forgot()
+    {
+        return view('login.forgot');
+    }
 }

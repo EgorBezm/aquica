@@ -27,6 +27,10 @@
 .for-input_password{
     border-radius: 0 0 8px 8px;
 }
+.for-input_hidden{
+    visibility: hidden;
+    display: none;
+}
 .for-input input{
     background: none;
     width: 400px;
@@ -53,4 +57,25 @@
 }
 .forgot__link{
     color: #4E73F8;
+}
+.login__error{
+    display: flex;
+    align-items: center;
+    width: 424px;
+    margin: 8px 0 0 0;
+}
+.error__icon{
+    margin: 0 5px 0 0 ;
+}
+.error__message{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F43C3C;
+}
+.login__error_no{
+    visibility: hidden;
+}
+.email__button_hidden{
+    visibility: hidden;
 }

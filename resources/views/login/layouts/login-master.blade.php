@@ -1,8 +1,8 @@
 @extends('layouts.master')
 
 @section('header')
-    <a href="#" class="btn btn_header">Log In</a>
-    <a href="#" class="btn btn_blue btn_header">Sign up</a>
+    <a href="{{ route('login-page') }}" class="btn btn_header">Log In</a>
+    <a href="{{ route('signup') }}" class="btn btn_blue btn_header">Sign up</a>
 @stop
 
 @section('content')
