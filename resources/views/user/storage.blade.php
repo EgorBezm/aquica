@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../resources/css/storage-page.css">
 @extends('layouts.master')
 
 @section('header')

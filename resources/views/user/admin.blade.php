@@ -13,7 +13,7 @@
             <div class="namepage">
                 <h1>Admin Panel</h1>
             </div>
-            <button class="admin-search_button">
+            <button class="main_button">
                 <h4>Search User</h4>
             </button>
         </div>

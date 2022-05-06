@@ -40,7 +40,7 @@ body {
     margin-left: 24px;
 }
 
-.admin-search_button h4 {
+.main_button h4 {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 500;
@@ -62,7 +62,7 @@ body {
     top: 28px;
 }
 
-.admin-search_button {
+.main_button {
     display: flex;
     flex-direction: row;
     justify-content: center;
