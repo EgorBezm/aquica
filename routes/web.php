@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\ResetPasswordController;
+use App\Http\Controllers\Auth\UserTagController;
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,13 +19,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('fordevelopment');
-});
 
-Route::get('welcome', function () {
-    return view('welcome');
-});
+
+Route::get('/', [MainController::class, 'main'])->middleware('auth')->name('home');
+
+Route::get('welcome', [MainController::class, 'welcome'])->name('login');
+
+Route::get('signup', [MainController::class, 'signup'])->name('signup');
+Route::post('signup', [RegisterController::class, 'register'])->name('register');
+
+Route::get('login', [MainController::class, 'login'])->name('login-page');
+Route::post('login', [LoginController::class, 'login'])->name('login-page');
+
+Route::get('login/forgot', [MainController::class, 'forgot'])->name('forgot');
+Route::post('login/forgot', [ForgotPasswordController::class, 'index'])->name('forgot');
+
+Route::get('login/reset-password', [ResetPasswordController::class, 'index'])->name('reset');
+Route::post('login/reset-password', [ResetPasswordController::class, 'reset'])->name('reset');
+
+Route::post('login/user-tag', [UserTagController::class, 'store'])->name('user-tag');
+
 
 Route::get('main', function () {
     return view('main');
@@ -57,7 +76,9 @@ Route::prefix('login')->group(function () {
     });
 
     Route::get('/settings', function () {
-        return view('login/settings');
+        return view('login/settings', [
+            'tags' => \App\Models\Tag::all(),
+        ]);
     });
 
     Route::get('/signup', function () {

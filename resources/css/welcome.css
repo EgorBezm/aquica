@@ -1,0 +1,92 @@
+.welcome{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.welcome__col{
+    padding: 0 30px;
+}
+.welcome__tagline{
+    padding: 0 0 72px 0;
+    max-width: 450px;
+}
+.welcome__description{
+    padding: 0 0 89px 0;
+    max-width: 450px;
+}
+.col__description{
+    font-size: 16px;
+}
+.welcome__colors{
+    padding: 20px 0 0 0;
+    display: flex;
+    margin: 0 0 63px 0;
+}
+.pink{
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    margin: 0 8px 0 0;
+}
+.pink_1{
+    background: rgba(255, 75, 110, 0.08);
+}
+.pink_2{
+    background: rgba(255, 75, 110, 0.24);
+}
+.pink_3{
+    background: rgba(255, 75, 110, 0.4);
+}
+.pink_4{
+    background: rgba(255, 75, 110, 0.64);
+}
+.pink_5{
+    background: #FF4B6E;
+}
+.pink_6{
+    background: linear-gradient(180deg, #FF4B6E 0%, #EC234A 100%);
+}
+.example_laptop img {
+    max-width: 562px;
+}
+.welcome__card{
+    padding: 9px 0 0 0;
+}
+.card__author{
+    display: flex;
+    align-items: center;
+}
+.author__name{
+    font-size: 6.56444px;
+    line-height: 9px;
+    padding: 0 0 0 4px;
+}
+.example_phone img{
+    width: 162px;
+    height: 326px;
+    margin: 19px 0 0 0;
+}
+
+@media (min-width: 1000px) {
+    .content{
+        height: 90vh;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .welcome{
+        flex-direction: column;
+        align-items: center;
+    }
+    .welcome__col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 35px 0;
+    }
+    footer{
+        position: inherit;
+    }
+}
