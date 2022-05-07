@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../resources/css/main-page.css">
+<link rel="stylesheet" href="../resources/css/main.css">
 @extends('layouts.master')
 
 @section('header')
@@ -8,7 +10,7 @@
     @include('user.layots.sidebar')
 
     <div class="content__main">
-
+    
     </div>
 @stop
 
