@@ -174,6 +174,8 @@
             </div>
         </div>
     </div>
+
+    <script src="{{ asset('js/main/main.js') }}"></script>
 @stop
 
 @section('footer')

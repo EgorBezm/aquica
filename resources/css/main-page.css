@@ -67,3 +67,9 @@
     align-items: center;
     color: #404d61;
 }
+footer{
+    display: none;
+}
+header{
+    z-index: 999;
+}
