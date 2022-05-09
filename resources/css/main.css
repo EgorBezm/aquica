@@ -21,6 +21,13 @@ ol[class] {
 a{
     text-decoration: none;
 }
+ul[class],
+ol[class] {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 header{
     position: fixed;
     top: 0;
@@ -49,10 +56,6 @@ header{
     bottom: 0;
     width: 474px;
     border: 1px solid #E1E3E6;
-}
-.content__main{
-    margin: 0 0 0 474px;
-    padding: 0 24px;
 }
 footer{
     position: absolute;

@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../resources/css/storage-page.css">
 @extends('layouts.master')
 
 @section('header')
@@ -8,7 +9,19 @@
     @include('user.layots.sidebar')
 
     <div class="content__main">
-
+    <div class="admin-title">
+            <div class="namepage">
+                <h1>Information</h1>
+            </div>
+            <div class="title-buttons">
+                <button class="alert_button">
+                    <img src="{{ asset('images/icons/icon-alert.svg')}}" alt="alert">
+                </button>
+                <button class="main_button">
+                    <h4>Confirm</h4>
+                </button>
+            </div>          
+        </div>
     </div>
 @stop
 
