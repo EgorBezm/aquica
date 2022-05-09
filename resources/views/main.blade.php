@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../resources/css/main-page.css">
-<link rel="stylesheet" href="../resources/css/main.css">
 @extends('layouts.master')
 
 @section('header')
@@ -8,6 +6,9 @@
 
 @section('content')
     @include('user.layots.sidebar')
+
+    <link rel="stylesheet" href="../resources/css/main-page.css">
+    <link rel="stylesheet" href="../resources/css/main.css">
 
     <div class="content__main">
         <div class="main-columns">
