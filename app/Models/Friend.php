@@ -9,8 +9,8 @@ class Friend extends Model
 {
     use HasFactory;
 
-    public function friends()
+    public function friend()
     {
-        return $this->hasMany(User::class);
+        return $this->hasOne(User::class);
     }
 }

@@ -65,10 +65,20 @@
                 <div class="content-block_elem1">
                     <div class="user-content_left">
                         <div class="user-avatar">
-                            <img src="{{ asset('images/avatars/avatar2.svg')}}" alt="user">
+                            @if($friend['emoji'])
+                                <img src="{{ asset('images/emoji' . '/' . $friend['emoji']['url'])}}" alt="user">
+                            @else
+                                <img src="{{ asset('images/avatars/avatar2.svg')}}" alt="user">
+                            @endif
                         </div>
                         <div class="user-name">
-                            <h4>Robert Plant</h4>
+                            <h4>
+                                @if($friend['name'])
+                                    {{ $friend['name'] }}
+                                @else
+                                    Aquica User
+                                @endif
+                            </h4>
                             <div class="user1-post_images">
                                 <img src="{{ asset('images/sidebar posts/Image1.svg')}}" alt="user1-img1">
                                 <img src="{{ asset('images/sidebar posts/Image2.svg')}}" alt="user1-img2">
