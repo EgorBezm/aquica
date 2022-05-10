@@ -56,4 +56,9 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Tag::class, 'user_tags');
     }
+
+    public function friends()
+    {
+        return $this->hasMany(Friend::class);
+    }
 }
