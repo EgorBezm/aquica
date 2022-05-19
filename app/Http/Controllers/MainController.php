@@ -40,4 +40,19 @@ class MainController extends Controller
     {
         return view('login.forgot');
     }
+
+    public function user()
+    {
+        return view('user.user');
+    }
+
+    public function storage()
+    {
+        return view('user.storage');
+    }
+
+    public function admin()
+    {
+        return view('user.admin');
+    }
 }

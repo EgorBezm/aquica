@@ -1,4 +1,3 @@
-
 @extends('layouts.master')
 
 @section('header')
@@ -6,9 +5,14 @@
 @stop
 
 @section('content')
-    @include('user.layots.sidebar')
+
     <link rel="stylesheet" href="{{ asset('css/storage-page.css') }}">
     <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
+
+    @include('user.layots.sidebar', [
+        'page' => 'storage',
+    ])
+    
     <div class="content__main">
     <div class="admin-title">
             <div class="namepage">
@@ -21,7 +25,7 @@
                 <button class="main_button">
                     <h4>Confirm</h4>
                 </button>
-            </div>          
+            </div>
         </div>
     </div>
 @stop
