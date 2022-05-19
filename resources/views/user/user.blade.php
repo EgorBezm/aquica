@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="../resources/css/user-page.css">
 @extends('layouts.master')
 
 @section('header')
@@ -6,7 +5,11 @@
 @stop
 
 @section('content')
-    @include('user.layots.sidebar')
+    @include('user.layots.sidebar', [
+        'page' => 'user',
+    ])
+
+    <link rel="stylesheet" href="{{ asset('css/user-page.css') }}">
 
     <div class="content__main">
         <div class="admin-title">
@@ -20,7 +23,7 @@
                 <button class="main_button">
                     <h4>Confirm</h4>
                 </button>
-            </div>          
+            </div>
         </div>
         <div class="admin-page_content">
             <div class="content-left_side">
@@ -117,7 +120,7 @@
                             <div class="dropdown-content_image_active">
                                 <div class="dropdown-content_name">
                                    <a href="#"><h4>Music</h4></a>
-                                    <img src="{{ asset('images/icons/dropdown/icon-dropdown-11.png')}}" alt="dropdown-img"> 
+                                    <img src="{{ asset('images/icons/dropdown/icon-dropdown-11.png')}}" alt="dropdown-img">
                                 </div>
                                 <img src="{{ asset('images/icons/icon-checkmark.svg')}}" alt="dropdown-img">
                             </div>
@@ -154,7 +157,7 @@
                         <div class="radio">
                             <input type="radio">
                             <h4>Non-binary</h4>
-                        </div>  
+                        </div>
                     </div>
                 </div>
             </div>

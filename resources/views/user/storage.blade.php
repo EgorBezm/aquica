@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="../resources/css/storage-page.css">
 @extends('layouts.master')
 
 @section('header')
@@ -6,7 +5,11 @@
 @stop
 
 @section('content')
-    @include('user.layots.sidebar')
+    @include('user.layots.sidebar', [
+        'page' => 'storage',
+    ])
+
+    <link rel="stylesheet" href="{{ asset('css/storage-page.css') }}">
 
     <div class="content__main">
     <div class="admin-title">
@@ -20,7 +23,7 @@
                 <button class="main_button">
                     <h4>Confirm</h4>
                 </button>
-            </div>          
+            </div>
         </div>
     </div>
 @stop
