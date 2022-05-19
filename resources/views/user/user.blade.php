@@ -8,8 +8,8 @@
     @include('user.layots.sidebar', [
         'page' => 'user',
     ])
-
     <link rel="stylesheet" href="{{ asset('css/user-page.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
 
     <div class="content__main">
         <div class="admin-title">

@@ -44,19 +44,21 @@ body{
 }
 .select__form{
     display: flex;
-    padding: 0 20px;
+    padding: 8px;
     background: #FFFFFF;
     border: 1px solid #E1E3E6;
+    border-radius: 8px;
 }
 .select__item{
     display: flex;
-    margin: 12px 0;
     width: 33%;
 }
 .select__item label{
     display: flex;
     align-items: center;
     width: 100%;
+    padding: 8px 16px;
+    margin: 2px;
 }
 .select__item label img{
     margin: 0 0 0 8px;
@@ -67,6 +69,11 @@ body{
 .custom-checkbox {
     margin: 0 10px 0 0;
     display: none;
+}
+.custom-checkbox:checked + label {
+    background: rgba(78, 115, 248, 0.08);
+    border-radius: 8px;
+    padding: 8px 16px!important;
 }
 .custom-checkbox:checked + label::after {
     content: '\2714';

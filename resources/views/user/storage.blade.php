@@ -5,12 +5,14 @@
 @stop
 
 @section('content')
+
+    <link rel="stylesheet" href="{{ asset('css/storage-page.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
+
     @include('user.layots.sidebar', [
         'page' => 'storage',
     ])
-
-    <link rel="stylesheet" href="{{ asset('css/storage-page.css') }}">
-
+    
     <div class="content__main">
     <div class="admin-title">
             <div class="namepage">
