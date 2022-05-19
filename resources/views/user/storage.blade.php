@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../resources/css/storage-page.css">
+
 @extends('layouts.master')
 
 @section('header')
@@ -7,7 +7,8 @@
 
 @section('content')
     @include('user.layots.sidebar')
-
+    <link rel="stylesheet" href="{{ asset('css/storage-page.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
     <div class="content__main">
     <div class="admin-title">
             <div class="namepage">

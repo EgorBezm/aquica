@@ -7,8 +7,8 @@
 @section('content')
     @include('user.layots.sidebar')
 
-    <link rel="stylesheet" href="../resources/css/main-page.css">
-    <link rel="stylesheet" href="../resources/css/main.css">
+    <link rel="stylesheet" href="{{ asset('css/main-page.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
     <div class="content__main">
         <div class="main-columns">
@@ -142,7 +142,7 @@
             </div>
 
             <!-- Колонка 5 -->
-            
+
             <div class="main-column">
                 <div class="column_element">
                     <div class="post-img">
