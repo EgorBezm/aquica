@@ -1,4 +1,3 @@
-
 let width = document.documentElement.clientWidth - 550;
 const widthCard = 263;
 
