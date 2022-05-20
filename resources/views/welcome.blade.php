@@ -11,7 +11,7 @@
                 Save creative inspiration, colors, cards and share them with other creators with Aquica!
             </div>
             <div class="welcome__sign-up">
-                <a href="#" class="btn btn_red">Sign Up</a>
+                <a href="{{ route('signup') }}" class="btn btn_red">Sign Up</a>
             </div>
         </div>
         <div class="welcome__col">
