@@ -9,10 +9,19 @@
 @stop
 
 @section('content')
+<<<<<<< HEAD
     @include('user.layots.sidebar')
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
     <link rel="stylesheet" href="{{asset('css/sidebar.css')}}">
     <link rel="stylesheet" href="{{asset('css/user-page.css')}}">
+=======
+    @include('user.layots.sidebar', [
+        'page' => 'user',
+    ])
+    <link rel="stylesheet" href="{{ asset('css/user-page.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
+
+>>>>>>> 4d31e751ec8172c67294172cb95fd48b1ceb6e79
     <div class="content__main">
         <div class="admin-title">
             <div class="namepage">

@@ -19,7 +19,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [MainController::class, 'main'])->middleware('auth')->name('home');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/', [MainController::class, 'main'])->name('home');
+    Route::get('user', [MainController::class, 'user'])->name('user');
+    Route::get('repository', [MainController::class, 'storage'])->name('storage');
+    Route::get('admin', [MainController::class, 'admin'])->middleware('admin')->name('admin');
+});
 
 Route::get('welcome', [MainController::class, 'welcome'])->name('login');
 
@@ -39,8 +44,9 @@ Route::prefix('login')->group(function () {
 
     Route::post('user-tag', [UserTagController::class, 'store'])->name('user-tag');
 
-});
+    Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 
+});
 
 Route::prefix('test')->group(function () {
     Route::get('/', function () {

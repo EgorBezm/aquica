@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4d31e751ec8172c67294172cb95fd48b1ceb6e79
 @extends('layouts.master')
 
 @section('header')
@@ -10,9 +13,20 @@
 @stop
 
 @section('content')
+<<<<<<< HEAD
     @include('user.layots.sidebar')
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
     <link rel="stylesheet" href="{{asset('css/storage-page.css')}}">
+=======
+
+    <link rel="stylesheet" href="{{ asset('css/storage-page.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
+
+    @include('user.layots.sidebar', [
+        'page' => 'storage',
+    ])
+    
+>>>>>>> 4d31e751ec8172c67294172cb95fd48b1ceb6e79
     <div class="content__main">
     <div class="admin-title">
             <div class="namepage">

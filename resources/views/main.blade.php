@@ -26,18 +26,20 @@
 @stop
 
 @section('content')
-    @include('user.layots.sidebar')
+    @include('user.layots.sidebar', [
+        'page' => 'home',
+    ])
 
-    <link rel="stylesheet" href="../resources/css/main-page.css">
-    <link rel="stylesheet" href="../resources/css/main.css">
+    <link rel="stylesheet" href="{{ asset('css/main-page.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
     <div class="content__main">
-        <div class="main-columns">
+        <div class="main-columns" id="columns">
             <div class="main-column">
 
                 <!-- Колонка 1 -->
 
-                <div class="column_element">
+                {{--<div class="column_element">
                     <div class="post-img">
                         <img src="{{ asset('images/main posts/post1demo.svg')}}" alt="card-post1">
                     </div>
@@ -63,9 +65,9 @@
                         <img src="{{ asset('images/logos/logo post.svg')}}" alt="post-avatar">
                         <h6>Aquica Researcher</h6>
                     </div>
-                </div>
-            </div>
+                </div>--}}
 
+<<<<<<< HEAD
             <!-- Колонка 2 -->
 
             <div class="main-column">
@@ -192,6 +194,8 @@
                         <h6>Aquica Researcher</h6>
                     </div>
                 </div>
+=======
+>>>>>>> 4d31e751ec8172c67294172cb95fd48b1ceb6e79
             </div>
         </div>
     </div>
