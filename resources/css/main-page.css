@@ -69,7 +69,6 @@
     align-items: center;
     color: #404d61;
 }
-<<<<<<< HEAD
 footer{
     display: none;
 }
@@ -120,6 +119,7 @@ header{
     border: 0.75px solid #E1E3E6;
     border-radius: 6px;
     margin-right: 24px;
+    cursor: pointer;
 }
 .alert__button{
     display: flex;
@@ -129,6 +129,7 @@ header{
     border: 0.75px solid #E1E3E6;
     border-radius: 6px;
     margin-right: 24px;
+    cursor: pointer;
 }
 .alert__button::before{
     display: flex;
@@ -147,6 +148,7 @@ header{
     border-radius: 90px;
     right: 122px;
     top: 4px;
+    cursor: pointer;
 }
 .add__button{
     display: flex;
@@ -158,6 +160,7 @@ header{
     border-radius: 6px;
     width: 84px;
     height: 38px;
+    cursor: pointer;
 }
 .login__button{
     padding: 6px 17px;
@@ -168,6 +171,7 @@ header{
     color: #757D8A;
     background: #F8F8F8;
     border: 1px solid #E1E3E6;
+    cursor: pointer;
 }
 .signup__button{
     display: flex;
@@ -178,4 +182,5 @@ header{
     font-size: 18px;
     color: #FFFFFF;
     background: #0071E3;
+    cursor: pointer;
 }

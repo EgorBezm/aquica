@@ -80,6 +80,7 @@
     color: #757D8A;
     background: #F8F8F8;
     border: 1px solid #E1E3E6;
+    cursor: pointer;
 }
 .signup__button{
     display: flex;
@@ -90,6 +91,7 @@
     font-size: 18px;
     color: #FFFFFF;
     background: #0071E3;
+    cursor: pointer;
 }
 @media (max-width: 1000px) {
     .forgot{
