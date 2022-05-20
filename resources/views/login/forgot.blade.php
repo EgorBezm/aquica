@@ -5,7 +5,7 @@
         <div class="header__logo">
             <img src="{{ asset('images/logos/logo-main.png') }}" alt="logo-main">
         </div>
-        <div class="header-nav">
+        <div class="header__nav">
             <div class="login__button">
                 Log in
             </div>
