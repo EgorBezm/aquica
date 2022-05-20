@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../resources/css/sidebar.css">  
+<link rel="stylesheet" href="{{asset('css/sidebar.css')}}">
 <div class="sidebar">
     <div class="sidebar-user">
     <div class="user-emoji">
@@ -20,7 +20,7 @@
                     <h4>Community</h4>
                 </div>
                 <img src="{{ asset('images/icons/icon-menu.svg')}}" alt="nav-menu">
-            </button>   
+            </button>
             <button class="sidebar_button">
                 <div class="sidebar-button__left">
                     <img src="{{ asset('images/icons/icon-hard-drive.svg')}}" alt="nav-storage">
@@ -34,7 +34,7 @@
                     <h4>Admin Panel</h4>
                 </div>
                 <img src="{{ asset('images/icons/icon-menu.svg')}}" alt="nav-menu">
-            </button>   
+            </button>
         </div>
     </div>
     <div class="sidebar-content_title">

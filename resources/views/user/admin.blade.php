@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="../resources/css/admin-page.css">
 @extends('layouts.master')
 
 @section('header')
@@ -7,7 +6,7 @@
 
 @section('content')
     @include('user.layots.sidebar')
-
+    <link rel="stylesheet" href="{{asset('css/admin-page.css')}}">
     <div class="content__main">
         <div class="admin-title">
             <div class="namepage">

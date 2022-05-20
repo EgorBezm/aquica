@@ -1,7 +1,11 @@
 @extends('login.layouts.login-master')
 
 @section('header')
-
+    <header class="header-container">
+        <div class="header__logo">
+            <img src="{{ asset('images/logos/logo-secondary.png') }}" alt="logo-secondary">
+        </div>
+    </header>
 @stop
 
 @section('content')

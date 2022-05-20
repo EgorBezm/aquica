@@ -1,5 +1,21 @@
 @extends('login.layouts.login-master')
 
+@section('header')
+    <header class="header-container">
+        <div class="header__logo">
+            <img src="{{ asset('images/logos/logo-main.png') }}" alt="logo-main">
+        </div>
+        <div class="header__nav">
+            <div class="login__button">
+                Log in
+            </div>
+            <div class="signup__button">
+                Sign up
+            </div>
+        </div>
+    </header>
+@stop
+
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
     <div class="welcome">

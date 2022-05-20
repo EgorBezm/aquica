@@ -79,3 +79,58 @@
 .email__button_hidden{
     visibility: hidden;
 }
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+.button__filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 12px;
+    gap: 6px;
+    background: #FFFFFF;
+    border: 0.75px solid #E1E3E6;
+    border-radius: 6px;
+    margin-right: 24px;
+}
+.header__nav h6{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 18px;
+    color: #757D8A;
+}
+
+.login__button{
+    padding: 6px 17px;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #757D8A;
+    background: #F8F8F8;
+    border: 1px solid #E1E3E6;
+}
+.signup__button{
+    display: flex;
+    padding: 7px 18px;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: #0071E3;
+}

@@ -1,7 +1,28 @@
 @extends('layouts.master')
 
 @section('header')
-    {{--  здесь кнопки  --}}
+    <header class="header-container">
+        <div class="header__full_logo">
+            <img src="{{ asset('images/logos/logo-main.png')}}" alt="logo-main">
+        </div>
+        <div class="header__nav">
+            <div class="button__filter">
+                <img src="{{ asset('images/icons/icon-filter.png')}}" alt="filter">
+                <h6>Filter</h6>
+                <img src="{{ asset('images/icons/icon-arrow-down.png')}}" alt="arrow-down">
+            </div>
+            <div class="search__button">
+                <img src="{{ asset('images/icons/icon-search.png')}}" alt="search">
+                <h6>Type something for search...</h6>
+            </div>
+            <div class="alert__button">
+                <img src="{{ asset('images/icons/icon-bell.png')}}" alt="bell">
+            </div>
+            <div class="add__button">
+                <img src="{{ asset('images/icons/icon-add.png')}}" alt="add">
+            </div>
+        </div>
+    </header>
 @stop
 
 @section('content')
@@ -142,7 +163,7 @@
             </div>
 
             <!-- Колонка 5 -->
-            
+
             <div class="main-column">
                 <div class="column_element">
                     <div class="post-img">

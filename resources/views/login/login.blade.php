@@ -1,9 +1,5 @@
 @extends('login.layouts.login-master')
 
-@section('header')
-
-@stop
-
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 
